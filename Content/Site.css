@@ -1,0 +1,68 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgba(52, 73, 94, 0.8); 
+    border-radius: 5px;
+    color: #fff; /* Asegura que el texto sea visible en el fondo */
+    text-align: center;
+}
+
+body {
+    background: url('https://i.imgur.com/oARN0JT.jpeg') center/cover no-repeat; /* Cambia la ruta de la imagen */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+.custom-box {
+    position: relative; /* Para posicionar el número dentro de la caja */
+    width: 80%; /* Se ocupa el 45% del ancho del contenedor padre para dejar espacio entre las cajas */
+    height:300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block; /* Para que las cajas aparezcan en línea */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto */
+    transition: box-shadow 0.3s ease; /* Transición suave del efecto hover */
+    background-color: #3498db;
+}
+
+/* Estilos para el número en la esquina */
+.box-number {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 12px;
+}
+
+/* Efecto hover */
+.custom-box:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
