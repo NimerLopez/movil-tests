@@ -29,6 +29,7 @@ End Code
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
                             <input type="submit" value="Dividir" class="btn btn-primary" />
+                            <p>Hola cambios</p>
                         </div>
                     </div>
                 </form>
